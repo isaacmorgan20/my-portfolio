@@ -23,16 +23,16 @@ const Projects = () => {
       description:
         "Personal developer portfolio showcasing projects, skills, and contact information.",
       tech: ["React", "Tailwind CSS"],
-      live: "#",
-      github: "#",
+      live: "https://my-portfolio-indol-two-25.vercel.app/",
+      github: "https://github.com/isaacmorgan20/my-portfolio",
     },
     {
       title: "Health Booking App",
       description:
         "RESTful API for a blog system with authentication, CRUD operations, and secure routes.",
       tech: ["React", "Tailwind Css", "Firebase"],
-      live: "#",
-      github: "#",
+      live: "health-check-app-uhch-rapa7i7ej-isaac-morgan-s-projects.vercel.app",
+      github: "https://github.com/isaacmorgan20/Health-Check-app",
     },
     {
       title: "Customer Chatbot",
