@@ -21,14 +21,14 @@ const Contact = () => {
           {/* Social Links */}
           <div className="flex gap-4 mt-6">
             <a
-              href="#"
+              href="https://github.com/isaacmorgan20"
               className="px-4 py-2 border border-white rounded-lg hover:bg-white hover:text-black transition"
             >
               GitHub
             </a>
 
             <a
-              href="#"
+              href="https://www.linkedin.com/in/isaac-morgan-4a9b31362/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BMWXEfmcFRyC%2FFLkHZH0aUw%3D%3D"
               className="px-4 py-2 border border-white rounded-lg hover:bg-white hover:text-black transition"
             >
               LinkedIn
