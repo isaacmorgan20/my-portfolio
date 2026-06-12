@@ -14,8 +14,8 @@ const Contact = () => {
           </p>
 
           <div className="space-y-3 text-gray-300">
-            <p>Email: isaacmorgan@example.com</p>
-            <p>Phone: +233 XX XXX XXXX</p>
+            <p>Email: morganisaackojo5547@email.com</p>
+            <p>Phone: +233 55 124 5547</p>
           </div>
 
           {/* Social Links */}
