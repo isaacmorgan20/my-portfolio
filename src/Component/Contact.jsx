@@ -15,6 +15,7 @@ const sendEmail = (e) => {
     )
     .then(() => {
       alert("Message sent!");
+      form.current.reset();
     })
     .catch((error) => {
       console.log(error);
