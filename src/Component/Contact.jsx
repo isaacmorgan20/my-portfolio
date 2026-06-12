@@ -8,10 +8,10 @@ const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs.sendForm(
-      "YOUR_SERVICE_ID",
-      "YOUR_TEMPLATE_ID",
+      "service_tejr5un",
+      "template_jyh5pws",
       form.current,
-      "YOUR_PUBLIC_KEY"
+      "nkQtl7sv8Zl-eBDxb"
     )
     .then(() => {
       alert("Message sent!");
