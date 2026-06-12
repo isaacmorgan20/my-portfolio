@@ -68,7 +68,7 @@ const Navbar = () => {
             </p>
           </a>
 
-          <a href="">
+          <a href="https://eu.docworkspace.com/d/sbOartpTE6scOmSq_p630xqvs1avghyrotm?sa=601.1037">
             <button className="bg-white text-black px-4 py-2 rounded-lg font-medium hover:bg-gray-200 transition">
               Resume
             </button>

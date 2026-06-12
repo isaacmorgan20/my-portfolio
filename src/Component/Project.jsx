@@ -7,16 +7,16 @@ const Projects = () => {
       description:
         "Full-stack e-commerce platform with user authentication, product management, and cart functionality.",
       tech: ["React", "Node.js", "Express", "MongoDB"],
-      live: "#",
-      github: "#",
+      // live: "#",
+      // github: "#",
     },
     {
       title: "Task Manager App",
       description:
         "A productivity app to create, update, and manage daily tasks with real-time updates.",
       tech: ["React", "Firebase", "Tailwind CSS"],
-      live: "#",
-      github: "#",
+      // live: "#",
+      // github: "#",
     },
     {
       title: "Portfolio Website",
@@ -31,7 +31,7 @@ const Projects = () => {
       description:
         "RESTful API for a blog system with authentication, CRUD operations, and secure routes.",
       tech: ["React", "Tailwind Css", "Firebase"],
-      live: "health-check-app-uhch-rapa7i7ej-isaac-morgan-s-projects.vercel.app",
+      live: "https://health-check-app-uhch.vercel.app",
       github: "https://github.com/isaacmorgan20/Health-Check-app",
     },
     {
@@ -39,8 +39,8 @@ const Projects = () => {
       description:
         "Real-time chat app with rooms and instant messaging using socket-based communication.",
       tech: ["React", "Tailwind Css", "Firebase"],
-      live: "#",
-      github: "#",
+      // live: "#",
+      // github: "#",
     },
     {
       title: "NexSupport App",
@@ -95,6 +95,8 @@ const Projects = () => {
               <div className="flex gap-3">
                 <a
                   href={project.live}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-sm px-4 py-2 bg-blue-600 rounded-lg hover:bg-blue-700 transition"
                 >
                   Live
