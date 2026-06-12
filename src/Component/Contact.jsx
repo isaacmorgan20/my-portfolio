@@ -1,6 +1,27 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser"
 
 const Contact = () => {
+const form = useRef();
+
+const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      "YOUR_SERVICE_ID",
+      "YOUR_TEMPLATE_ID",
+      form.current,
+      "YOUR_PUBLIC_KEY"
+    )
+    .then(() => {
+      alert("Message sent!");
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+  };
+
+
   return (
     <section id="contact" className="bg-black text-white py-20">
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row gap-12">
@@ -38,23 +59,29 @@ const Contact = () => {
 
         {/* Right Side - Form */}
         <div className="flex-1">
-          <form className="space-y-4">
+          <form className="space-y-4" ref={form} onSubmit={sendEmail}>
 
             <input
               type="text"
+              name="user_name"
               placeholder="Your Name"
+              required
               className="w-full p-3 rounded-lg bg-gray-900 border border-gray-700 focus:outline-none focus:border-blue-500"
             />
 
             <input
               type="email"
+              name="user_email"
               placeholder="Your Email"
+              required
               className="w-full p-3 rounded-lg bg-gray-900 border border-gray-700 focus:outline-none focus:border-blue-500"
             />
 
             <textarea
               rows="5"
+              name="message"
               placeholder="Your Message"
+              required
               className="w-full p-3 rounded-lg bg-gray-900 border border-gray-700 focus:outline-none focus:border-blue-500"
             ></textarea>
 
