@@ -6,15 +6,16 @@ import Projects from '../Component/Project'
 import Contact from '../Component/Contact'
 import Footer from '../Component/Footer'
 
+
 const Home = () => {
   return (
     <section>
-        <NavBar />
-        <Hero />
-        <About />
-        <Projects />
-        <Contact/>
-        <Footer />
+      <NavBar />
+      <Hero />
+      <About />
+      <Projects />
+      <Contact />
+      <Footer />
     </section>
   )
 }

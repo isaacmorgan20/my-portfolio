@@ -1,23 +1,8 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   const projects = [
-    {
-      title: "E-Commerce Web App",
-      description:
-        "Full-stack e-commerce platform with user authentication, product management, and cart functionality.",
-      tech: ["React", "Node.js", "Express", "MongoDB"],
-      // live: "#",
-      // github: "#",
-    },
-    {
-      title: "Task Manager App",
-      description:
-        "A productivity app to create, update, and manage daily tasks with real-time updates.",
-      tech: ["React", "Firebase", "Tailwind CSS"],
-      // live: "#",
-      // github: "#",
-    },
     {
       title: "Portfolio Website",
       description:
@@ -29,92 +14,142 @@ const Projects = () => {
     {
       title: "Health Booking App",
       description:
-        "RESTful API for a blog system with authentication, CRUD operations, and secure routes.",
-      tech: ["React", "Tailwind Css", "Firebase"],
+        "Healthcare booking platform with appointment scheduling, Firebase authentication, and Firestore integration.",
+      tech: ["React", "Firebase", "Tailwind CSS"],
       live: "https://health-check-app-uhch.vercel.app",
       github: "https://github.com/isaacmorgan20/Health-Check-app",
     },
     {
       title: "Customer Chatbot",
       description:
-        "Real-time chat app with rooms and instant messaging using socket-based communication.",
-      tech: ["React", "Tailwind Css", "Firebase"],
-      // live: "#",
-      // github: "#",
+        "Customer support chatbot focused on improving communication and user engagement.",
+      tech: ["React", "Firebase", "AI"],
+      live: "#",
+      github: "#"
     },
     {
-      title: "NexSupport App",
+      title: "E-Commerce Web App",
       description:
-        "Weather app that fetches live data from APIs and displays forecasts in a clean UI.",
+        "Modern e-commerce platform featuring product listings, responsive design, and reusable components.",
+      tech: ["React", "JavaScript", "Tailwind CSS"],
+      live: "#",
+      github: "#"
+    },
+    {
+      title: "Task Manager App",
+      description:
+        "Productivity application for organizing tasks and improving workflow management.",
+      tech: ["React", "Firebase", "Tailwind CSS"],
+      live: "#",
+      github: "#"
+    },
+    {
+      title: "NexSupport Weather App",
+      description:
+        "Weather dashboard providing real-time weather information through API integration.",
       tech: ["React", "API Integration", "Tailwind CSS"],
       live: "#",
-      github: "#",
+      github: "#"
     },
   ];
 
   return (
-    <section id="projects" className="bg-black text-white py-20">
+    <section id="projects" className="relative bg-black text-white py-24 overflow-hidden">
+      {/* Background Glow */} <div className="absolute top-20 right-0 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl"></div>
+
       <div className="max-w-7xl mx-auto px-6">
 
-        {/* Title */}
-        <h2 className="text-4xl font-bold mb-12 text-center">
-          Projects
-        </h2>
+        {/* Heading */}
+        <div className="text-center mb-16">
 
-        {/* Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <span className="text-blue-500 uppercase tracking-widest text-sm">
+            Portfolio
+          </span>
+
+          <h2 className="text-4xl md:text-5xl font-bold mt-3 mb-4" data-aos="flip-up">
+            Featured Projects
+          </h2>
+
+          <p className="text-gray-400 max-w-2xl mx-auto" data-aos="fade-left">
+            A collection of projects that showcase my skills in web
+            development, AI applications, data-driven solutions,
+            and modern frontend technologies.
+          </p>
+
+        </div>
+
+        {/* Projects Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8" data-aos="fade-right">
 
           {projects.map((project, index) => (
-            <div
+            <motion.div
               key={index}
-              className="bg-gray-900 p-6 rounded-xl border border-gray-800 hover:border-blue-500 transition"
+              whileHover={{ y: -10 }}
+              transition={{ duration: 0.3 }}
+              className="bg-gray-900/60 backdrop-blur-lg border border-gray-800 rounded-2xl p-6 hover:border-blue-500 transition duration-300"
             >
+
+              {/* Project Number */}
+              <p className="text-blue-500 font-bold mb-4">
+                0{index + 1}
+              </p>
+
               {/* Title */}
-              <h3 className="text-xl font-semibold mb-3">
+              <h3 className="text-2xl font-bold mb-3">
                 {project.title}
               </h3>
 
               {/* Description */}
-              <p className="text-gray-400 text-sm mb-4">
+              <p className="text-gray-400 leading-relaxed mb-6">
                 {project.description}
               </p>
 
               {/* Tech Stack */}
-              <div className="flex flex-wrap gap-2 mb-4">
-                {project.tech.map((t, i) => (
+              <div className="flex flex-wrap gap-2 mb-6">
+                {project.tech.map((tech, i) => (
                   <span
                     key={i}
-                    className="text-xs bg-gray-800 px-3 py-1 rounded-full"
+                    className="px-3 py-1 text-xs rounded-full bg-black border border-blue-500"
                   >
-                    {t}
+                    {tech}
                   </span>
                 ))}
               </div>
 
               {/* Buttons */}
-              <div className="flex gap-3">
-                <a
-                  href={project.live}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm px-4 py-2 bg-blue-600 rounded-lg hover:bg-blue-700 transition"
-                >
-                  Live
-                </a>
+              <div className="flex gap-3 mt-auto">
 
-                <a
-                  href={project.github}
-                  className="text-sm px-4 py-2 border border-white rounded-lg hover:bg-white hover:text-black transition"
-                >
-                  GitHub
-                </a>
+                {project.live && (
+                  <a
+                    href={project.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 text-center bg-blue-600 hover:bg-blue-700 py-2 rounded-lg transition"
+                  >
+                    Live Demo
+                  </a>
+                )}
+
+                {project.github && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 text-center border border-white hover:bg-white hover:text-black py-2 rounded-lg transition"
+                  >
+                    GitHub
+                  </a>
+                )}
+
               </div>
-            </div>
+
+            </motion.div>
           ))}
 
         </div>
       </div>
     </section>
+
   );
 };
 
