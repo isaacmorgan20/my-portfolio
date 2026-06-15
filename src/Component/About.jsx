@@ -85,7 +85,7 @@ const About = () => {
             </p>
 
             {/* Skills */}
-            <div className="flex flex-wrap gap-3 mb-10">
+            <div className="flex flex-wrap gap-3 mb-10" data-aos="fade-right">
               {skills.map((skill) => (
                 <span
                   key={skill}
@@ -97,7 +97,7 @@ const About = () => {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-6">
+            <div className="grid grid-cols-3 gap-6" data-aos="fade-left">
 
               <div className="bg-gray-900 p-5 rounded-xl text-center border border-gray-800">
                 <h4 className="text-3xl font-bold text-blue-500">8+</h4>
