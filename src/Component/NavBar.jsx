@@ -1,107 +1,117 @@
 import React, { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-
-  // Track navbar scroll state
   const [scrolled, setScrolled] = useState(false);
 
-  // Detect scrolling
   useEffect(() => {
-
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(window.scrollY > 50);
     };
 
-    // Listen for scroll
     window.addEventListener("scroll", handleScroll);
-
-    // Cleanup
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const navLinks = [
+    { name: "Home", href: "#" },
+    { name: "About", href: "#about" },
+    { name: "Projects", href: "#projects" },
+    { name: "Contact", href: "#contact" },
+  ];
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-black shadow-lg" : "bg-transparent"
-        }`}
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+        scrolled
+          ? "bg-black/80 backdrop-blur-md shadow-lg border-b border-gray-800"
+          : "bg-transparent"
+      }`}
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
         {/* Logo */}
         <motion.h1
-          className="text-2xl font-bold text-white"
-          initial={{ opacity: 0, x: -100 }}
+          className="text-xl md:text-2xl font-bold text-white tracking-wide"
+          initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
         >
-          Isaac Morgan
+          Isaac <span className="text-blue-500">Morgan</span>
         </motion.h1>
 
         {/* Desktop Menu */}
-        <motion.div className="hidden md:flex items-center gap-6 text-white"
-          initial={{ opacity: 0, x: 100 }}
+        <motion.div
+          className="hidden md:flex items-center gap-8 text-gray-300"
+          initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
         >
-          <a href="#">Home</a>
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
+          {navLinks.map((link) => (
+            <a
+              key={link.name}
+              href={link.href}
+              className="hover:text-blue-500 transition duration-300"
+            >
+              {link.name}
+            </a>
+          ))}
 
-          <a href="https://eu.docworkspace.com/d/sbOartpTE6scOmSq_p630xqvs1avghyrotm?sa=601.1037">
-            <button className="bg-white text-black px-4 py-2 rounded-lg">
+          <a
+            href="https://eu.docworkspace.com/d/sbOartpTE6scOmSq_p630xqvs1avghyrotm?sa=601.1037"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="ml-4"
+          >
+            <button className="bg-blue-600 hover:bg-blue-700 px-5 py-2 rounded-lg text-white font-medium transition">
               Resume
             </button>
           </a>
-      </motion.div>
+        </motion.div>
 
-      {/* Mobile Menu Button */}
-      <button
-        onClick={() => setMenuOpen(!menuOpen)}
-        className="md:hidden text-white"
-      >
-        {menuOpen ? <X size={28} /> : <Menu size={28} />}
-      </button>
-    </div>
-
-      {/* Mobile Menu */ }
-  {
-    menuOpen && (
-      <div className="md:hidden bg-black text-white flex flex-col items-center gap-6 py-6">
-        <a href="#" onClick={() => setMenuOpen(false)}>
-          Home
-        </a>
-
-        <a href="#about" onClick={() => setMenuOpen(false)}>
-          About
-        </a>
-
-        <a href="#projects" onClick={() => setMenuOpen(false)}>
-          Projects
-        </a>
-
-        <a href="#contact" onClick={() => setMenuOpen(false)}>
-          Contact
-        </a>
-
-        <a href="https://eu.docworkspace.com/d/sbOartpTE6scOmSq_p630xqvs1avghyrotm?sa=601.1037">
-          <button className="bg-white text-black px-4 py-2 rounded-lg">
-            Resume
-          </button>
-        </a>
+        {/* Mobile Button */}
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="md:hidden text-white"
+        >
+          {menuOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
       </div>
-    )
-  }
-    </nav >
+
+      {/* Mobile Menu */}
+      <AnimatePresence>
+        {menuOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            className="md:hidden bg-black/95 backdrop-blur-md border-t border-gray-800 flex flex-col items-center gap-6 py-8"
+          >
+            {navLinks.map((link) => (
+              <a
+                key={link.name}
+                href={link.href}
+                onClick={() => setMenuOpen(false)}
+                className="text-gray-300 hover:text-blue-500 text-lg transition"
+              >
+                {link.name}
+              </a>
+            ))}
+
+            <a
+              href="https://eu.docworkspace.com/d/sbOartpTE6scOmSq_p630xqvs1avghyrotm?sa=601.1037"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMenuOpen(false)}
+            >
+              <button className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg text-white font-medium transition">
+                Resume
+              </button>
+            </a>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </nav>
   );
 };
 
