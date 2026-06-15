@@ -62,7 +62,7 @@ const Footer = () => {
 
               <a
                 href="https://github.com/isaacmorgan20"
-                target="_blank"
+                // target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-700 hover:border-blue-500 hover:text-blue-500 transition"
               >
@@ -71,7 +71,7 @@ const Footer = () => {
 
               <a
                 href="https://www.linkedin.com/in/isaac-morgan-4a9b31362/"
-                target="_blank"
+                // target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-700 hover:border-blue-500 hover:text-blue-500 transition"
               >
