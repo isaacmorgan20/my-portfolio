@@ -123,6 +123,7 @@ const Projects = () => {
                   <a
                     href={project.live}
                     target="_blank"
+                    data-aos="flip-down"
                     rel="noopener noreferrer"
                     className="flex-1 text-center bg-blue-600 hover:bg-blue-700 py-2 rounded-lg transition"
                   >
@@ -134,6 +135,7 @@ const Projects = () => {
                   <a
                     href={project.github}
                     target="_blank"
+                    data-aos="flip-down"
                     rel="noopener noreferrer"
                     className="flex-1 text-center border border-white hover:bg-white hover:text-black py-2 rounded-lg transition"
                   >

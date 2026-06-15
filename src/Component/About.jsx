@@ -19,7 +19,8 @@ const About = () => {
     <section id="about" className="relative bg-black text-white py-24 overflow-hidden"
 
     >
-      {/* Background Glow */} <div className="absolute top-20 left-0 w-72 h-72 bg-blue-600/10 rounded-full blur-3xl"></div>
+      {/* Background Glow */}
+      <div className="absolute top-20 left-0 w-72 h-72 bg-blue-600/10 rounded-full blur-3xl"></div>
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8" data-aos="zoom-in">
 
@@ -48,13 +49,12 @@ const About = () => {
 
               <div className="absolute inset-0 bg-blue-500 blur-3xl opacity-20 rounded-full"></div>
 
-              <motion.img
+              <img
                 src={Ik}
+                data-aos="flip-left"
                 alt="Isaac Morgan"
                 className="relative w-72 h-72 md:w-96 md:h-96 object-cover rounded-3xl border border-blue-500/40"
-                initial={{ opacity: 0, x: -50 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
+
               />
 
             </div>
