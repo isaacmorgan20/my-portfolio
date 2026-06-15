@@ -58,7 +58,7 @@ const Navbar = () => {
           ))}
 
           <a
-            href="https://eu.docworkspace.com/d/sbOartpTE6scOmSq_p630xqvs1avghyrotm?sa=601.1037"
+            href="https://drive.google.com/file/d/1O-RlTQuL9H2hnj3eu9n7zXMGOwBGPvHy/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="ml-4"
@@ -99,7 +99,7 @@ const Navbar = () => {
             ))}
 
             <a
-              href="https://eu.docworkspace.com/d/sbOartpTE6scOmSq_p630xqvs1avghyrotm?sa=601.1037"
+              href="https://drive.google.com/file/d/1O-RlTQuL9H2hnj3eu9n7zXMGOwBGPvHy/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMenuOpen(false)}

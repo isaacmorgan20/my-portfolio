@@ -86,15 +86,13 @@ const Footer = () => {
         </div>
 
         {/* Bottom */}
-        <div className="border-t border-gray-800 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="border-t border-gray-800 mt-10 pt-6  md:flex-row items-center gap-4">
 
-          <p className="text-gray-500 text-sm">
+          <p className="text-gray-500 text-sm text-center">
             © {new Date().getFullYear()} Isaac Morgan. All rights reserved.
           </p>
 
-          <p className="text-gray-500 text-sm">
-            Built with React & Tailwind CSS
-          </p>
+          
 
         </div>
 
