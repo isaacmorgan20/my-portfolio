@@ -56,7 +56,7 @@ const Hero = () => {
           </p>
 
           {/* Skills */}
-          <div className="flex flex-wrap gap-3 justify-center lg:justify-start mb-10">
+          <div className="flex flex-wrap gap-3 justify-center lg:justify-start mb-10" data-aos="fade-left">
             {skills.map((skill) => (
               <span
                 key={skill}
