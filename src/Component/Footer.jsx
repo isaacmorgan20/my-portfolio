@@ -18,7 +18,7 @@ const Footer = () => {
               Isaac Morgan
             </h2>
 
-            <p className="text-gray-400 leading-relaxed">
+            <p className="text-gray-400 leading-relaxed" data-aos="fade-up">
               Software Developer & AI Enthusiast passionate about
               building responsive web applications, AI-powered
               solutions, and impactful digital experiences.
@@ -33,19 +33,19 @@ const Footer = () => {
 
             <div className="flex flex-col gap-3 text-gray-400">
 
-              <a href="#" className="hover:text-blue-500 transition">
+              <a href="#" className="hover:text-blue-500 transition" data-aos="fade-left">
                 Home
               </a>
 
-              <a href="#about" className="hover:text-blue-500 transition">
+              <a href="#about" className="hover:text-blue-500 transition" data-aos="fade-right">
                 About
               </a>
 
-              <a href="#projects" className="hover:text-blue-500 transition">
+              <a href="#projects" className="hover:text-blue-500 transition" data-aos="fade-left">
                 Projects
               </a>
 
-              <a href="#contact" className="hover:text-blue-500 transition">
+              <a href="#contact" className="hover:text-blue-500 transition" data-aos="fade-up">
                 Contact
               </a>
 
@@ -63,6 +63,7 @@ const Footer = () => {
               <a
                 href="https://github.com/isaacmorgan20"
                 // target="_blank"
+                data-aos="fade-right"
                 rel="noopener noreferrer"
                 className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-700 hover:border-blue-500 hover:text-blue-500 transition"
               >
@@ -72,6 +73,7 @@ const Footer = () => {
               <a
                 href="https://www.linkedin.com/in/isaac-morgan-4a9b31362/"
                 // target="_blank"
+                data-aos="fade-left"
                 rel="noopener noreferrer"
                 className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-700 hover:border-blue-500 hover:text-blue-500 transition"
               >
@@ -88,7 +90,7 @@ const Footer = () => {
         {/* Bottom */}
         <div className="border-t border-gray-800 mt-10 pt-6  md:flex-row items-center gap-4">
 
-          <p className="text-gray-500 text-sm text-center">
+          <p className="text-gray-500 text-sm text-center" >
             © {new Date().getFullYear()} Isaac Morgan. All rights reserved.
           </p>
 

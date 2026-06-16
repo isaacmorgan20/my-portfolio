@@ -123,7 +123,7 @@ emailjs
           </div>
 
           {/* Contact Form */}
-          <div className="bg-gray-900/60 backdrop-blur-lg border border-gray-800 rounded-3xl p-8" data-aos="fade-right">
+          <div className="bg-gray-900/60 backdrop-blur-lg border border-gray-800 rounded-3xl p-8" data-aos="fade-up">
 
             <h3 className="text-2xl font-bold mb-6">
               Send Me a Message
