@@ -76,7 +76,7 @@ const About = () => {
               modern software engineering practices.
             </p>
 
-            <p className="text-gray-400 leading-relaxed mb-8" data-aos="fade-left">
+            <p className="text-gray-300 leading-relaxed mb-8" data-aos="fade-left">
               I enjoy transforming ideas into functional products and
               continuously expanding my expertise in React, Firebase,
               Python, AI Chatbots, and Retrieval-Augmented Generation (RAG).
