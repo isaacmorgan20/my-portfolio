@@ -30,6 +30,15 @@ const Projects = () => {
       image: healthBookingImg,
     },
     {
+      title: "Weather App",
+      description:
+        "Weather dashboard providing real-time weather information through API integration.",
+      tech: ["React", "API Integration", "Tailwind CSS"],
+      live: "https://weather-app-one-phi-0iwiv9o490.vercel.app/",
+      github: "https://github.com/isaacmorgan20/weather-app",
+      image: weatherAppImg,
+    },
+    {
       title: "Customer Chatbot",
       description:
         "Customer support chatbot focused on improving communication and user engagement.",
@@ -55,15 +64,6 @@ const Projects = () => {
       live: "#",
       github: "#",
       image: taskManagerImg,
-    },
-    {
-      title: "NexSupport Weather App",
-      description:
-        "Weather dashboard providing real-time weather information through API integration.",
-      tech: ["React", "API Integration", "Tailwind CSS"],
-      live: "#",
-      github: "#",
-      image: weatherAppImg,
     },
   ];
 
