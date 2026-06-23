@@ -50,7 +50,7 @@ const About = () => {
               <div className="absolute inset-0 bg-blue-500 blur-3xl opacity-20 rounded-full"></div>
 
               <img
-                src={Ik}
+                src="https://media.istockphoto.com/id/2170578930/photo/about-me.webp?a=1&b=1&s=612x612&w=0&k=20&c=neEPycl7C9053jYA2TPFa5sllHU5np_YzFErzHDmfJ4="
                 data-aos="flip-left"
                 alt="Isaac Morgan"
                 className="relative w-72 h-72 md:w-96 md:h-96 object-cover rounded-3xl border border-blue-500/40"
