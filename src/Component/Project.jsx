@@ -2,12 +2,12 @@ import React from "react";
 import { motion } from "framer-motion";
 
 // Import project screenshots
-import wImg from "../assets/Images/projects/w.png";
-import eImg from "../assets/Images/projects/e.png";
-import qImg from "../assets/Images/projects/q.png";
-import tImg from "../assets/Images/projects/t.png";
+import weathImg from "../assets/Images/projects/weath.png";
+import ecomImg from "../assets/Images/projects/ecom.png";
+import herbImg from "../assets/Images/projects/herb.png";
+import cosaImg from "../assets/Images/projects/cosa.png";
 import taskManagerImg from "../assets/Images/projects/task_manager.png";
-import rImg from "../assets/Images/projects/r.png";
+import portImg from "../assets/Images/projects/port.png";
 
 const Projects = () => {
   const projects = [
@@ -18,7 +18,7 @@ const Projects = () => {
       tech: ["React", "Tailwind CSS"],
       live: "https://my-portfolio-indol-two-25.vercel.app/",
       github: "https://github.com/isaacmorgan20/my-portfolio",
-      image: wImg,
+      image: portImg,
     },
     {
       title: "Health Booking App",
@@ -27,7 +27,7 @@ const Projects = () => {
       tech: ["React", "Firebase", "Tailwind CSS"],
       live: "https://health-check-app-uhch.vercel.app",
       github: "https://github.com/isaacmorgan20/Health-Check-app",
-      image: eImg,
+      image: herbImg,
     },
     {
       title: "Weather App",
@@ -36,7 +36,7 @@ const Projects = () => {
       tech: ["React", "API Integration", "Tailwind CSS"],
       live: "https://weather-app-one-phi-0iwiv9o490.vercel.app/",
       github: "https://github.com/isaacmorgan20/weather-app",
-      image: rImg,
+      image: weathImg,
     },
     {
       title: "E-Commerce Web App",
@@ -45,7 +45,7 @@ const Projects = () => {
       tech: ["React", "JavaScript", "Tailwind CSS"],
       live: "https://shopping-weld-six.vercel.app/",
       github: "https://github.com/isaacmorgan20/Shopping",
-      image: tImg,
+      image: ecomImg,
     },
     {
       title: "Cosa Website",
@@ -54,7 +54,7 @@ const Projects = () => {
       tech: ["React", "Javascript"],
       live: "https://cart-two.vercel.app/",
       github: "https://github.com/isaacmorgan20/Cart",
-      image: qImg,
+      image: cosaImg,
     },
     {
       title: "Task Manager App",
