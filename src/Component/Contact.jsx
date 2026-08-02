@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
@@ -7,23 +7,20 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    ```
-emailjs
-  .sendForm(
-    "service_tejr5un",
-    "template_jyh5pws",
-    form.current,
-    "nkQtl7sv8Zl-eBDxb"
-  )
-  .then(() => {
-    alert("Message sent successfully!");
-    form.current.reset();
-  })
-  .catch((error) => {
-    console.log(error);
-  });
-```
-
+    emailjs
+      .sendForm(
+        "service_tejr5un",
+        "template_jyh5pws",
+        form.current,
+        "nkQtl7sv8Zl-eBDxb"
+      )
+      .then(() => {
+        alert("Message sent successfully!");
+        form.current.reset();
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
 
   return (

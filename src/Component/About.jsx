@@ -1,7 +1,3 @@
-import React from "react";
-import { motion } from "framer-motion";
-import Ik from "../assets/Images/Ik.jpg";
-
 const About = () => {
   const skills = [
     "React",
