@@ -2,12 +2,12 @@ import React from "react";
 import { motion } from "framer-motion";
 
 // Import project screenshots
-import portfolioImg from "../assets/Images/projects/portfolio.png";
-import healthBookingImg from "../assets/Images/projects/health_booking.png";
-import chatbotImg from "../assets/Images/projects/chatbot.png";
-import ecommerceImg from "../assets/Images/projects/ecommerce.png";
+import wImg from "../assets/Images/projects/w.png";
+import eImg from "../assets/Images/projects/e.png";
+import qImg from "../assets/Images/projects/q.png";
+import tImg from "../assets/Images/projects/t.png";
 import taskManagerImg from "../assets/Images/projects/task_manager.png";
-import weatherAppImg from "../assets/Images/projects/weather_app.png";
+import rImg from "../assets/Images/projects/r.png";
 
 const Projects = () => {
   const projects = [
@@ -18,7 +18,7 @@ const Projects = () => {
       tech: ["React", "Tailwind CSS"],
       live: "https://my-portfolio-indol-two-25.vercel.app/",
       github: "https://github.com/isaacmorgan20/my-portfolio",
-      image: portfolioImg,
+      image: wImg,
     },
     {
       title: "Health Booking App",
@@ -27,7 +27,7 @@ const Projects = () => {
       tech: ["React", "Firebase", "Tailwind CSS"],
       live: "https://health-check-app-uhch.vercel.app",
       github: "https://github.com/isaacmorgan20/Health-Check-app",
-      image: healthBookingImg,
+      image: eImg,
     },
     {
       title: "Weather App",
@@ -36,7 +36,7 @@ const Projects = () => {
       tech: ["React", "API Integration", "Tailwind CSS"],
       live: "https://weather-app-one-phi-0iwiv9o490.vercel.app/",
       github: "https://github.com/isaacmorgan20/weather-app",
-      image: weatherAppImg,
+      image: rImg,
     },
     {
       title: "E-Commerce Web App",
@@ -45,16 +45,16 @@ const Projects = () => {
       tech: ["React", "JavaScript", "Tailwind CSS"],
       live: "https://shopping-weld-six.vercel.app/",
       github: "https://github.com/isaacmorgan20/Shopping",
-      image: ecommerceImg,
+      image: tImg,
     },
     {
-      title: "Customer Chatbot",
+      title: "Cosa Website",
       description:
-        "Customer support chatbot focused on improving communication and user engagement.",
-      tech: ["React", "Firebase", "AI"],
-      live: "#",
-      github: "#",
-      image: chatbotImg,
+        "Cosa website is an e-commence platform",
+      tech: ["React", "Javascript"],
+      live: "https://cart-two.vercel.app/",
+      github: "https://github.com/isaacmorgan20/Cart",
+      image: qImg,
     },
     {
       title: "Task Manager App",
@@ -105,10 +105,7 @@ const Projects = () => {
                   className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent opacity-60"></div>
-                {/* Project Number Glassmorphic Badge */}
-                <div className="absolute top-4 left-4 bg-gray-900/80 backdrop-blur-md border border-gray-800 text-blue-400 font-bold px-3 py-1 rounded-lg text-sm shadow-md">
-                  0{index + 1}
-                </div>
+               
               </div>
 
               {/* Project Info */}
