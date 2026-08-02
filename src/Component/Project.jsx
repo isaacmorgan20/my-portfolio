@@ -39,15 +39,6 @@ const Projects = () => {
       image: weatherAppImg,
     },
     {
-      title: "Customer Chatbot",
-      description:
-        "Customer support chatbot focused on improving communication and user engagement.",
-      tech: ["React", "Firebase", "AI"],
-      live: "#",
-      github: "#",
-      image: chatbotImg,
-    },
-    {
       title: "E-Commerce Web App",
       description:
         "Modern e-commerce platform featuring product listings, responsive design, and reusable components.",
@@ -55,6 +46,15 @@ const Projects = () => {
       live: "https://shopping-weld-six.vercel.app/",
       github: "https://github.com/isaacmorgan20/Shopping",
       image: ecommerceImg,
+    },
+    {
+      title: "Customer Chatbot",
+      description:
+        "Customer support chatbot focused on improving communication and user engagement.",
+      tech: ["React", "Firebase", "AI"],
+      live: "#",
+      github: "#",
+      image: chatbotImg,
     },
     {
       title: "Task Manager App",
