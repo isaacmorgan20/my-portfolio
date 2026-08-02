@@ -52,8 +52,8 @@ const Projects = () => {
       description:
         "Modern e-commerce platform featuring product listings, responsive design, and reusable components.",
       tech: ["React", "JavaScript", "Tailwind CSS"],
-      live: "#",
-      github: "#",
+      live: "https://shopping-weld-six.vercel.app/",
+      github: "https://github.com/isaacmorgan20/Shopping",
       image: ecommerceImg,
     },
     {
