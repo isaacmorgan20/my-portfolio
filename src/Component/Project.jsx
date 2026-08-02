@@ -6,8 +6,8 @@ import weathImg from "../assets/Images/projects/weath.png";
 import ecomImg from "../assets/Images/projects/ecom.png";
 import herbImg from "../assets/Images/projects/herb.png";
 import cosaImg from "../assets/Images/projects/cosa.png";
-import taskManagerImg from "../assets/Images/projects/task_manager.png";
 import portImg from "../assets/Images/projects/port.png";
+import taskManagerImg from "../assets/Images/projects/task_manager.png";
 
 const Projects = () => {
   const projects = [
