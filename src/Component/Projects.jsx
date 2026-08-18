@@ -6,6 +6,7 @@ import ecommence from "../assets/Images/ecommence.png";
 import herbal from "../assets/Images/herbal.png";
 import portfolio from "../assets/Images/portfolio.png";
 import weather from "../assets/Images/weather.png";
+import task from "../assets/Images/task.png"
 
 // import taskManager from "../assets/Images/projects/taskManager.png";
 
@@ -18,7 +19,7 @@ const Projects = () => {
       tech: ["React", "Tailwind CSS"],
       live: "https://my-portfolio-indol-two-25.vercel.app/",
       github: "https://github.com/isaacmorgan20/my-portfolio",
-      image: port,
+      image: portfolio,
     },
     {
       title: "Health Booking App",
@@ -27,7 +28,7 @@ const Projects = () => {
       tech: ["React", "Firebase", "Tailwind CSS"],
       live: "https://health-check-app-uhch.vercel.app",
       github: "https://github.com/isaacmorgan20/Health-Check-app",
-      image: herb,
+      image: herbal,
     },
     {
       title: "Weather App",
@@ -36,7 +37,7 @@ const Projects = () => {
       tech: ["React", "API Integration", "Tailwind CSS"],
       live: "https://weather-app-one-phi-0iwiv9o490.vercel.app/",
       github: "https://github.com/isaacmorgan20/weather-app",
-      image: weath,
+      image: weather,
     },
     {
       title: "E-Commerce Web App",
@@ -45,7 +46,7 @@ const Projects = () => {
       tech: ["React", "JavaScript", "Tailwind CSS"],
       live: "https://shopping-weld-six.vercel.app/",
       github: "https://github.com/isaacmorgan20/Shopping",
-      image: ecom,
+      image: ecommence,
     },
     {
       title: "Cosa Website",
@@ -63,7 +64,7 @@ const Projects = () => {
       tech: ["React", "Firebase", "Tailwind CSS"],
       live: "#",
       github: "#",
-      image: taskManager,
+      image: task,
     },
   ];
 
