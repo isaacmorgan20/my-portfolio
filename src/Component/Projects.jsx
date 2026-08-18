@@ -1,15 +1,15 @@
 import { motion } from "framer-motion";
 
 // Import project screenshots
-import weath from "../assets/Images/projects/weath.png";
-import ecom from "../assets/Images/projects/ecom.png";
-import herb from "../assets/Images/projects/herb.png";
-import cosa from "../assets/Images/projects/cosa.png";
-import port from "../assets/Images/projects/port.png";
+import weath from "../assets/Images/PROJECT/weath.png";
+import ecom from "../assets/Images/PROJECT/ecom.png";
+import herb from "../assets/Images/PROJECT/herb.png";
+import cosa from "../assets/Images/PROJECT/cosa.png";
+import port from "../assets/Images/PROJECT/port.png";
 // import taskManager from "../assets/Images/projects/taskManager.png";
 
 const Projects = () => {
-  const projects = [
+  const pro = [
     {
       title: "Portfolio Website",
       description:
@@ -89,7 +89,7 @@ const Projects = () => {
 
         {/* Projects Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8" data-aos="fade-right">
-          {projects.map((project, index) => (
+          {pros.map((project, index) => (
             <motion.div
               key={index}
               whileHover={{ y: -8 }}

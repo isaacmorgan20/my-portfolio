@@ -1,7 +1,7 @@
 import NavBar from '../Component/NavBar'
 import Hero from '../Component/Hero'
 import About from '../Component/About'
-import Projects from '../Component/Project'
+import Projects from '../Component/Projects'
 import Contact from '../Component/Contact'
 import Footer from '../Component/Footer'
 
