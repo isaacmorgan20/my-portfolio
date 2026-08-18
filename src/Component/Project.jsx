@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 
 // Import project screenshots
-import weathImg from "../assets/Images/projects/weath.png";
-import ecomImg from "../assets/Images/projects/ecom.png";
-import herbImg from "../assets/Images/projects/herb.png";
-import cosaImg from "../assets/Images/projects/cosa.png";
-import portImg from "../assets/Images/projects/port.png";
-import taskManagerImg from "../assets/Images/projects/task_manager.png";
+import weath from "../assets/Images/projects/weath.png";
+import ecom from "../assets/Images/projects/ecom.png";
+import herb from "../assets/Images/projects/herb.png";
+import cosa from "../assets/Images/projects/cosa.png";
+import port from "../assets/Images/projects/port.png";
+import taskManager from "../assets/Images/projects/task_manager.png";
 
 const Projects = () => {
   const projects = [
@@ -17,7 +17,7 @@ const Projects = () => {
       tech: ["React", "Tailwind CSS"],
       live: "https://my-portfolio-indol-two-25.vercel.app/",
       github: "https://github.com/isaacmorgan20/my-portfolio",
-      image: portImg,
+      image: port,
     },
     {
       title: "Health Booking App",
@@ -26,7 +26,7 @@ const Projects = () => {
       tech: ["React", "Firebase", "Tailwind CSS"],
       live: "https://health-check-app-uhch.vercel.app",
       github: "https://github.com/isaacmorgan20/Health-Check-app",
-      image: herbImg,
+      image: herb,
     },
     {
       title: "Weather App",
@@ -35,7 +35,7 @@ const Projects = () => {
       tech: ["React", "API Integration", "Tailwind CSS"],
       live: "https://weather-app-one-phi-0iwiv9o490.vercel.app/",
       github: "https://github.com/isaacmorgan20/weather-app",
-      image: weathImg,
+      image: weath,
     },
     {
       title: "E-Commerce Web App",
@@ -44,7 +44,7 @@ const Projects = () => {
       tech: ["React", "JavaScript", "Tailwind CSS"],
       live: "https://shopping-weld-six.vercel.app/",
       github: "https://github.com/isaacmorgan20/Shopping",
-      image: ecomImg,
+      image: ecom,
     },
     {
       title: "Cosa Website",
@@ -53,7 +53,7 @@ const Projects = () => {
       tech: ["React", "Javascript"],
       live: "https://cart-two.vercel.app/",
       github: "https://github.com/isaacmorgan20/Cart",
-      image: cosaImg,
+      image: cosa,
     },
     {
       title: "Task Manager App",
@@ -62,7 +62,7 @@ const Projects = () => {
       tech: ["React", "Firebase", "Tailwind CSS"],
       live: "#",
       github: "#",
-      image: taskManagerImg,
+      image: taskManager,
     },
   ];
 
