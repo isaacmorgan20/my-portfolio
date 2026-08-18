@@ -91,7 +91,7 @@ const Projects = () => {
 
         {/* Projects Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8" data-aos="fade-right">
-          {pros.map((project, index) => (
+          {pro.map((project, index) => (
             <motion.div
               key={index}
               whileHover={{ y: -8 }}
