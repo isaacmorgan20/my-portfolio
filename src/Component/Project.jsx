@@ -6,7 +6,7 @@ import ecom from "../assets/Images/projects/ecom.PNG";
 import herb from "../assets/Images/projects/herb.PNG";
 import cosa from "../assets/Images/projects/cosa.PNG";
 import port from "../assets/Images/projects/port.PNG";
-import taskManager from "../assets/Images/projects/task_manager.PNG";
+import taskManager from "../assets/Images/projects/taskManager.PNG";
 
 const Projects = () => {
   const projects = [
