@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 
 // Import project screenshots
-import weath from "../assets/Images/projects/weath.PNG";
-import ecom from "../assets/Images/projects/ecom.PNG";
-import herb from "../assets/Images/projects/herb.PNG";
-import cosa from "../assets/Images/projects/cosa.PNG";
-import port from "../assets/Images/projects/port.PNG";
-import taskManager from "../assets/Images/projects/taskManager.PNG";
+import weath from "../assets/Images/projects/weath.png";
+import ecom from "../assets/Images/projects/ecom.png";
+import herb from "../assets/Images/projects/herb.png";
+import cosa from "../assets/Images/projects/cosa.png";
+import port from "../assets/Images/projects/port.png";
+import taskManager from "../assets/Images/projects/taskManager.png";
 
 const Projects = () => {
   const projects = [
